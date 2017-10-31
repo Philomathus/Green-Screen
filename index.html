@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+	
+<head>
+	
+	<meta charset="UTF-8">
+	
+		<title>Green Screen Web-page</title>
+		
+	<link rel="stylesheet" href="css/style.css">
+	
+	<script src="js/SimpleImage.js"></script>
+	
+	<script src="js/index.js"></script>		
+	
+</head>
+
+<body>
+	
+	<h1> <span id="H1span1">Green Screen</span> <span id="H1span2">Algorithm</span> </h1>
+	
+	<div id="table_container">
+	
+	<table>
+		
+		<tr>
+			<th> <h3>Foreground</h3> </th>
+			<th> <h3>Background</h3> </th>
+			<th> <h3>Output</h3> </th>
+		</tr>
+
+		<tr>
+			<td> <canvas id="canvasObject1"></canvas> </td>
+			<td> <canvas id="canvasObject2"></canvas> </td>
+			<td> <canvas id="canvasObject3"></canvas> </td>
+		</tr>
+		
+		<tr>
+			<td> <input id="fileObject1" type="file" accept="image/*" multiple="false" onchange="uploadFG()"> </td>
+			<td> <input id="fileObject2" type="file" accept="image/*" multiple="false" onchange="uploadBG()"> </td>
+			<td> <input type="button" value="Create Composite" onclick="greenScreen()"> </td>
+		</tr>
+	
+	</table>	
+	
+	<p>
+	
+		<input id="clearButton" type="button" value="Clear Canvases" onclick="clearCanvas()">		
+	
+	</p>	
+		
+	</div>
+	
+	<div id="footer">
+	
+		<img src="images.png"/>	
+	
+		<a id="coursera_link" href="https://www.coursera.org/" target="_blank">The best place to learn programming</a>
+		
+		<a id="imageFilter_link" href="file:///home/krzysztof/Web_Dev/ImageFIlter/index.html" target="_blank"> <span id="Footerspan"> visit:</span> <span id="Footerspan1">Image Filter</span> <span id="Footerspan2">Algorithms</span> </a>
+	</div>
+	
+</body>
+
+</html>
